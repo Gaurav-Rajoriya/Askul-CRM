@@ -12,7 +12,7 @@ const server = http.createServer(app);
 // ── Socket.io Setup ────────────────────────────────────────────────────────
 const io = new Server(server, {
   cors: {
-    origin: "*",
+    origin: "https://askulcrm.vercel.app/",
     methods: ["GET", "POST"],
   },
 });
